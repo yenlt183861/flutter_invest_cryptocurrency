@@ -124,7 +124,8 @@ class __$$UserModelImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-@JsonSerializable()
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 class _$UserModelImpl with DiagnosticableTreeMixin implements _UserModel {
   const _$UserModelImpl(
       {required this.firstName, required this.lastName, required this.age});
